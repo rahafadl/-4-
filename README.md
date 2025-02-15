@@ -7,12 +7,10 @@
 3️⃣ التبديل بين اليمين واليسار بالتناوب لمدة دقيقة.
 
 ضع  الكود tinkercad
+## التحكم في 4 محركات DC باستخدام Arduino
 
-
-
-
-
-
+### الكود البرمجي:
+```cpp
 // تعريف المنافذ
 const int IN1 = 7;  // المحرك الأمامي الأيسر
 const int IN2 = 8;
@@ -74,45 +72,7 @@ void backward() {
   digitalWrite(IN2, HIGH);
   digitalWrite(IN3, LOW);
   digitalWrite(IN4, HIGH);
-  digitalWrite(IN5, LOW);
-  digitalWrite(IN6, HIGH);
-  digitalWrite(IN7, LOW);
-  digitalWrite(IN8, HIGH);
-}
+  digitalWrite(IN5, LO
 
-// 🔹 الدوران لليمين
-void turnRight() {
-  digitalWrite(IN1, LOW);
-  digitalWrite(IN2, HIGH);
-  digitalWrite(IN3, HIGH);
-  digitalWrite(IN4, LOW);
-  digitalWrite(IN5, LOW);
-  digitalWrite(IN6, HIGH);
-  digitalWrite(IN7, HIGH);
-  digitalWrite(IN8, LOW);
-}
 
-// 🔹 الدوران لليسار
-void turnLeft() {
-  digitalWrite(IN1, HIGH);
-  digitalWrite(IN2, LOW);
-  digitalWrite(IN3, LOW);
-  digitalWrite(IN4, HIGH);
-  digitalWrite(IN5, HIGH);
-  digitalWrite(IN6, LOW);
-  digitalWrite(IN7, LOW);
-  digitalWrite(IN8, HIGH);
-}
-
-// 🔹 إيقاف المحركات
-void stopMotors() {
-  digitalWrite(IN1, LOW);
-  digitalWrite(IN2, LOW);
-  digitalWrite(IN3, LOW);
-  digitalWrite(IN4, LOW);
-  digitalWrite(IN5, LOW);
-  digitalWrite(IN6, LOW);
-  digitalWrite(IN7, LOW);
-  digitalWrite(IN8, LOW);
-}
 
